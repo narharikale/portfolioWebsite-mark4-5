@@ -18,7 +18,7 @@
 
 body{
     font-family:'Rubik',sans-serif ;
-    font-size:1.5rem;
+    font-size:1.2rem;
     margin: 0px;
     background-color:var(--background-color);
 }
@@ -28,6 +28,13 @@ body{
     
 }
 
+p{
+    font-size: 1.4rem;
+}
+
+:hover{
+    text-decoration: underline orange 5px;
+}
 
 .center-container{
     max-width: 700px;
@@ -38,6 +45,8 @@ body{
 .hr{
    margin:2rem 0rem ;
 }
+
+
 /* links */
 
 
@@ -83,10 +92,7 @@ body{
 .project-section{
     padding: 2rem;
 }
-/* 
-.pro-ul{
-    padding:2rem
-} */
+
 
 /* navbar */
 
@@ -102,7 +108,7 @@ body{
 .navhead{
     font-size: 2rem;
     font-weight: bold;
-    /* padding: 1rem 0rem 0rem 1rem; */
+   
 }
  .nav-list{
     
@@ -122,6 +128,7 @@ body{
 
 .active-link{
     font-weight: bold;
+    text-decoration: underline orange 4px;
 }
 
 /* header */
