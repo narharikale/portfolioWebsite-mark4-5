@@ -32,8 +32,13 @@ p{
     font-size: 1.4rem;
 }
 
-:hover{
+.sectionHeading{
     text-decoration: underline orange 5px;
+}
+
+.secondary-link:hover{
+    background-color: var(--primarycolor);
+    color: var(--background-color)
 }
 
 .center-container{
@@ -90,7 +95,9 @@ p{
 }
 
 .project-section{
-    padding: 2rem;
+    border: 2px solid;
+    padding: 1.5rem;
+    margin: 1.5rem;
 }
 
 
@@ -200,10 +207,20 @@ p{
 }
 
 .social-links{
+    margin: 1rem;
+    font-size: x-large;
     text-align: center;
     padding: 10px;
     color: white;
 }
 
-
+.marks{
+    font-size: large;
+    border: 3px solid #ffa500;
+    border-radius: 15px;
+    background-color: #a6a6a68c;
+    margin: 0px;
+    width: 90px;
+    height: 35px;
+}
 
