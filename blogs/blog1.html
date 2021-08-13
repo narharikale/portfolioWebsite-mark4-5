@@ -40,83 +40,74 @@
 
 
 
-        <h3>What is network log</h3>
+        <h2>What is network log</h2>
          
-         <p>It is a section in the network tab which shows all the Network resources that are requested. It's in a row and column format. Each row has individual network resources and the column shows additional resource information.</p>
+            <p>It is a section in the network tab which shows all the Network resources that are requested. It's in a row and column format. Each row has individual network resources and the column shows additional resource information.</p>
+            <img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1628779929820/oPVzEko3i.png" alt="no image" />
+
+            <p> You can open dev tools by pressing "ctrl + shift + J" for windows and then      click on Network tab.
+            The red region of the above image displays the network log. Which consists of rows and columns.
+            Each row displays a single network resource that is requested and a column represents the information related to this resource.</p>
 
 
 
-![networklog.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1628779929820/oPVzEko3i.png)
-
-
-You can open dev tools by pressing  ` ctrl + shift +J `   for windows and then click on Network tab.
-The red region of the above image displays the network log. Which consists of rows and columns.
-Each row displays a single network resource that is requested and a column represents the information related to this resource.
-
-
-
-
-
- ## Headers of Network log
+        <h2>Headers of Network log</h2>
            
-The network log is made up of the following default columns: Name, State, Type, Size, Time, Initiator, Waterfall. There are a lot more headers but they are hidden. This can be found by right-clicking on the header.  
+            <p>The network log is made up of the following default columns: Name, State, Type, Size, Time, Initiator, Waterfall. There are a lot more headers but they are hidden. This can be found by right-clicking on the header.</p> 
+            <img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1628784608390/5zi0lyASC.png" alt="no img"/> 
 
-![networklog2.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1628784608390/5zi0lyASC.png)
-
-We will cover some headers.
-
-
-- ***method - *** These are HTTP methods that indicate the intended action to be carried out on a resource. Common methods are GET, PUT, POST, DELETE.
-
-  
-- ***Status - *** This is the HTTP response code issued by the Server to the client's requests. 200 stands for OK and 400 means bad request. There are so many status codes are available you can learn about them [here](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes) 
+            
 
 
-- ***Type -*** It is a type of resource, We usually use XHR or fetch.
+            <li class="list-blogs"> <strong>Method - </strong> These are HTTP methods that indicate the intended action to be carried out on a resource. Common methods are GET, PUT, POST, DELETE.</li>
+
+    
+            <li class="list-blogs"> <strong>Status - </strong>This is the HTTP response code issued by the Server to the client's requests. 200 stands for OK and 400 means bad request. There are so many status codes are available you can learn about them <a href= "https://en.wikipedia.org/wiki/List_of_HTTP_status_codes">here</a></li>
 
 
-- *** Initiator - *** It shows why this resource was requested. By clicking on the resources, it takes you to the actual code which caused this request to run. 
+            <li class="list-blogs"><strong>Type - </strong> It is a type of resource, We usually use XHR or fetch.</li>
 
 
-- *** Time-*** This indicates the time required to complete a request.
+            <li class="list-blogs"> <strong>Initiator - </strong> It shows why this resource was requested. By clicking on the resources, it takes you to the actual code which caused this request to run.</li> 
 
 
-- *** Size-*** Actual size of requested resource.
+            <li class="list-blogs"> <strong>Time - </strong> This indicates the time required to complete a request.</li>
 
+
+            <li class="list-blogs"> <strong>Size - </strong> Actual size of requested resource.</li>
 
 
 
 
 
-##  Inspect single resource
-Click any resource in the Name column and it opens a new tab. This tab consists of  Network headers, preview, response, initiator, and timing. We will discuss them one by one, with respect to the last resources. 
-
-
-![headers.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1628836098007/6LKDMDTjC.png)
-
-We are inspecting the last resource in the above image, so it shows more info about that resource.
-
-
-- **Headers-** It shows more information about general headers, request headers, and response headers.
-
-- **Preview-** It is just a preview of what is requested.                                                                                                                                                                                                                                                                                                        
-
-
-- **Response-** response and preview are the same but it shows extra info about what we received in response
-
-- **Initiator-** It displays which line of code initiated this request. it also shows the source code and file.
-
-- **Timing-** It shows a detailed overview of network activity for this resource. 
-
-
-To get a better understanding, you can experiment with this [demo](https://naraharikale-miniontalk-mark6.netlify.app/)
+        <h2>Inspect single resource</h2> 
+            <p>Click any resource in the Name column and it opens a new tab. This tab consists of  Network headers, preview, response, initiator, and timing. We will discuss them one by one, with respect to the last resources. </p>
+            <img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1628836098007/6LKDMDTjC.png" alt="no image">
 
 
 
-** **
+            <p>
+            We are inspecting the last resource in the above image, so it shows more info about that resource.
 
-The Chrome dev tool has plenty of concepts to learn, we've just covered only a few of them.
-If you come across any mistakes(errors) or want to provide feedback, please let me know in the comments below 👇.
+
+            <li class="list-blogs"> <strong>headers - </strong> It shows more information about general headers, request headers, and response headers.
+
+                
+            <li class="list-blogs"> <strong>Preview - </strong> It is just a preview of what is requested.                                                                                                                                                                     <li class="list-blogs"> <strong>Response - </strong>response and preview are the same but it shows extra info about what we received in response
+
+            <li class="list-blogs"> <strong>Initiator - </strong> It displays which line of code initiated this request. it also shows the source code and file.
+
+            <li class="list-blogs"> <strong>Timing - </strong> It shows a detailed overview of network activity for this resource. 
+
+            
+            <p>To get a better understanding, you can experiment with this <a href= "https://naraharikale-miniontalk-mark6.netlify.app/">demo</a></p>
+
+            </p>
+
+         <hr>
+
+         <p>The Chrome dev tool has plenty of concepts to learn, we've just covered only a few of them.
+         If you come across any mistakes(errors) or want to provide feedback,please free to DM 👇.</p>
 
 
 
