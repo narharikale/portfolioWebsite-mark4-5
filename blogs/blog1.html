@@ -25,37 +25,102 @@
 
 
     <div class="blog-container">
-        <h1>The CSS Box Model</h1>
-        <small>july-2021</small>
-        <p>When laying out a document, the browser's rendering engine represents each element as a rectangular box according to the standard CSS basic box model. CSS determines the size, position, and properties (color, background, border size, etc.) of these boxes.
-        Every box is composed of four parts (or areas), defined by their respective edges:the content edge, padding edge, border edge, and margin edge.</p>
+        <article>
 
-        <img class ="blog-hero-img" src="/images/bodmodel.PNG" alt="no img">
+          <h1>A Quick Introduction to the Network log.</h1>
 
-        <h3>Content area </h3>
+          <p>The Chrome dev tool is very useful for debugging, Network diagnosis, and app performance. We may also use it as a code editor to write, cut, copy and paste HTML elements. It also provides some features to check responsiveness for mobile or small display size devices.</p>
 
-        <p>The content area,bounded by the content edge, contains the "real" content of the element, such as text, an image, or a video player. Its dimensions are the content width (or content-box width) and the content height (or content-box height). It often has a background color or background image.</p>
-        If the box-sizing property is set to content-box (default) and if the element is a block element, the content area's size can be explicitly defined with the width, min-width, max-width, height, min-height, and max-height properties.
-        
-        <h3>Padding area </h3>
+         <p>There are many topics in each tab that we can write a blog on each of those. The network tab also has many sections, but we are covering only Network log. A network log is a section in the Network tab where it logs all network activity. In this blog, we are answering the following questions.
+         <li>What is a Network log?</li>
+         <li>Various headers in Network log.</li>
+         <li>How to inspect a single resource request?</li>
+        </p>
+        <hr>
 
-        <p>The padding area,bounded by the padding edge, extends the content area to include the element's padding. Its dimensions are the padding-box width and the padding-box height.</p>
-        The thickness of the padding is determined by the padding-top, padding-right, padding-bottom, padding-left, and shorthand padding properties.
 
-        <h3>Border area </h3>
 
-        The border area,bounded by the border edge, extends the padding area to include the element's borders. Its dimensions are the border-box width and the border-box height.
-       
-        <p>The thickness of the borders are determined by the border-width and shorthand border properties. If the box-sizing property is set to border-box, the border area's size can be explicitly defined with the width, min-width, max-width, height, min-height, and max-height properties. When there is a background (background-color or background-image) set on a box, it extends to the outer edge of the border (i.e. extends underneath the border in z-ordering). This default behavior can be altered with the background-clip css property.</p>
-        
-        <h3>Margin area </h3>
+        <h3>What is network log</h3>
+         
+         <p>It is a section in the network tab which shows all the Network resources that are requested. It's in a row and column format. Each row has individual network resources and the column shows additional resource information.</p>
 
-        the margin area bounded by the margin edge, extends the border area to include an empty area used to separate the element from its neighbors. Its dimensions are the margin-box width and the margin-box height.
 
-        <p>The size of the margin area is determined by the margin-top, margin-right, margin-bottom, margin-left, and shorthand margin properties. When margin collapsing occurs, the margin area is not clearly defined since margins are shared between boxes.</p>
 
-        <p>Finally, note that for non-replaced inline elements, the amount of space taken up (the contribution to the height of the line) is determined by the line-height property, even though the borders and padding are still displayed around the content.</p>
+![networklog.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1628779929820/oPVzEko3i.png)
+
+
+You can open dev tools by pressing  ` ctrl + shift +J `   for windows and then click on Network tab.
+The red region of the above image displays the network log. Which consists of rows and columns.
+Each row displays a single network resource that is requested and a column represents the information related to this resource.
+
+
+
+
+
+ ## Headers of Network log
+           
+The network log is made up of the following default columns: Name, State, Type, Size, Time, Initiator, Waterfall. There are a lot more headers but they are hidden. This can be found by right-clicking on the header.  
+
+![networklog2.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1628784608390/5zi0lyASC.png)
+
+We will cover some headers.
+
+
+- ***method - *** These are HTTP methods that indicate the intended action to be carried out on a resource. Common methods are GET, PUT, POST, DELETE.
+
   
+- ***Status - *** This is the HTTP response code issued by the Server to the client's requests. 200 stands for OK and 400 means bad request. There are so many status codes are available you can learn about them [here](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes) 
+
+
+- ***Type -*** It is a type of resource, We usually use XHR or fetch.
+
+
+- *** Initiator - *** It shows why this resource was requested. By clicking on the resources, it takes you to the actual code which caused this request to run. 
+
+
+- *** Time-*** This indicates the time required to complete a request.
+
+
+- *** Size-*** Actual size of requested resource.
+
+
+
+
+
+
+##  Inspect single resource
+Click any resource in the Name column and it opens a new tab. This tab consists of  Network headers, preview, response, initiator, and timing. We will discuss them one by one, with respect to the last resources. 
+
+
+![headers.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1628836098007/6LKDMDTjC.png)
+
+We are inspecting the last resource in the above image, so it shows more info about that resource.
+
+
+- **Headers-** It shows more information about general headers, request headers, and response headers.
+
+- **Preview-** It is just a preview of what is requested.                                                                                                                                                                                                                                                                                                        
+
+
+- **Response-** response and preview are the same but it shows extra info about what we received in response
+
+- **Initiator-** It displays which line of code initiated this request. it also shows the source code and file.
+
+- **Timing-** It shows a detailed overview of network activity for this resource. 
+
+
+To get a better understanding, you can experiment with this [demo](https://naraharikale-miniontalk-mark6.netlify.app/)
+
+
+
+** **
+
+The Chrome dev tool has plenty of concepts to learn, we've just covered only a few of them.
+If you come across any mistakes(errors) or want to provide feedback, please let me know in the comments below 👇.
+
+
+
+        </article>
        
     </div>
 
