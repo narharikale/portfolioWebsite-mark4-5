@@ -25,37 +25,48 @@
 
 
     <div class="blog-container">
-        <h1>The CSS Box Model-2</h1>
-        <small>july-2021</small>
-        <p>When laying out a document, the browser's rendering engine represents each element as a rectangular box according to the standard CSS basic box model. CSS determines the size, position, and properties (color, background, border size, etc.) of these boxes.
-        Every box is composed of four parts (or areas), defined by their respective edges:the content edge, padding edge, border edge, and margin edge.</p>
+        <article>
+            <h2>The 5 Useful HTML Attributes...</h2>
+            <img src="../images/blog2.PNG" alt="no img"/>
+            <hr>
+              <p> Author : Narhari Kale.</p>
+              <p><small> Published On : 11-Aug-2021</p></small> 
+              
+            <hr>
+            <p>In this blog, we are learning about 5 HTML Attributes that will be helpful for you. HTML elements have attributes, there are dozens of attributes are available in HTML but we are learning only a few of them.</p>
+            <p>What are attributes? Attributes are like extra features for elements or we say that it can adjust elements default behavior. It can be written in name and value pair e.g.name: "value"</p>
+            <p>We are covering the following attributes.</p>
+                <li>type</li>
+                <li>name</li>
+                <li>for</li>
+                <li>value</li>
+                <li>required</li>
+            <p>Let's get started.</p>
+        <hr>
+           <h2>type</h2>
+                <p>it is used to specify the type of element. In the case of the input element, we can use type to choose between various values like number, text, time, date, etc. It is commonly used with input,button,style,script elements.</p>
+                <img src="../images/blog2.1.PNG" alt="no img"/>
+                <p>In the above example,type = "number" gives you an output with the number field and type="radio" gives you the radio button.</p>   
+            <h2>name</h2>
+                <p>name attribute can be used to store the name of that HTML element. It can also be used as a reference element to javascript. When we use the input element with type radio, it is used to form a group of radio inputs</p>
+                <img src="../images/blog2.2.PNG" alt="no img"/>
+                <p>in this case, we used a label with an input element. Input element has a type of radio button, which forms a group of two input elements so we can toggle with them and answer that question with true or false. If we change the second input element name with a different name it acts as a separate radio button.</p>
+            <h2>for</h2>
+                <p>for attribute is used to connect elements. We can use for attribute with label and output elements.</p>
+                <img src="../images/blog2.3.PNG" alt="no img"/>
+                <p>Here we used for attribute to connect label with input element. it works like this --> this is a label for input elements with id "radio1", the value of for attribute has to be same as the id of an input element.</p>
+            <h2>value</h2>
+                <p>It specifies the value for that element. value attribute is used as the default or initial value of that element. It can be used with button and input elements.</p>
+                <img src="../images/blog2.4.PNG" alt="no img"/>
+                <p>In the above example initial value of input element is yes. We can access this value in javascript to modify or compare values.</p>
+            <h2>required</h2>
+                <p>As its name suggests it is required. it used with input,textarea,select elements. it indicates the user has to fill out the input element.</p>
+                <img src="../images/blog2.5.PNG" alt="no img"/>
+                <P>It is used to show user, a prompt that you did not fill the input element, and it's mandatory to fill that out. The required attribute is a boolean attribute.</P>
 
-        <img class ="blog-hero-img" src="/images/bodmodel.PNG" alt="no img">
-
-        <h3>Content area </h3>
-
-        <p>The content area,bounded by the content edge, contains the "real" content of the element, such as text, an image, or a video player. Its dimensions are the content width (or content-box width) and the content height (or content-box height). It often has a background color or background image.</p>
-        If the box-sizing property is set to content-box (default) and if the element is a block element, the content area's size can be explicitly defined with the width, min-width, max-width, height, min-height, and max-height properties.
-        
-        <h3>Padding area </h3>
-
-        <p>The padding area,bounded by the padding edge, extends the content area to include the element's padding. Its dimensions are the padding-box width and the padding-box height.</p>
-        The thickness of the padding is determined by the padding-top, padding-right, padding-bottom, padding-left, and shorthand padding properties.
-
-        <h3>Border area </h3>
-
-        The border area,bounded by the border edge, extends the padding area to include the element's borders. Its dimensions are the border-box width and the border-box height.
-       
-        <p>The thickness of the borders are determined by the border-width and shorthand border properties. If the box-sizing property is set to border-box, the border area's size can be explicitly defined with the width, min-width, max-width, height, min-height, and max-height properties. When there is a background (background-color or background-image) set on a box, it extends to the outer edge of the border (i.e. extends underneath the border in z-ordering). This default behavior can be altered with the background-clip css property.</p>
-        
-        <h3>Margin area </h3>
-
-        the margin area bounded by the margin edge, extends the border area to include an empty area used to separate the element from its neighbors. Its dimensions are the margin-box width and the margin-box height.
-
-        <p>The size of the margin area is determined by the margin-top, margin-right, margin-bottom, margin-left, and shorthand margin properties. When margin collapsing occurs, the margin area is not clearly defined since margins are shared between boxes.</p>
-
-        <p>Finally, note that for non-replaced inline elements, the amount of space taken up (the contribution to the height of the line) is determined by the line-height property, even though the borders and padding are still displayed around the content.</p>
-  
+            <hr>
+            <p>That's it. hope you have enjoyed👍. this is my first blog, so please share your valuable feedback 🤗, it will be very helpful for me.</p>
+            </article>
        
     </div>
 
