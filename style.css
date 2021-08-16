@@ -170,12 +170,16 @@ p{
 .footer-links{
     background-color: var(--primarycolor);
     margin: auto;
-    padding:1.5rem 0.5rem;
+    padding:0.5rem 0.5rem;
     text-align: center;
     color:var(--nav-foot-head);
     border-top-right-radius: 1rem;
     margin-block-start: 0em;
 
+}
+.footer-header{
+    padding: 0.5rem;
+    margin: auto;
 }
 
 
@@ -222,6 +226,14 @@ p{
     margin: 0px;
     width: 90px;
     height: 35px;
+}
+
+
+.blogimg{
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    margin: auto;
 }
 
 .list-blogs{
